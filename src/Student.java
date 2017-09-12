@@ -14,22 +14,24 @@ public class Student implements Comparable {
 	 * student id
 	 */
 	private int id;
-
+	id=123;
 	/**
 	 * student name and surname separated by the whitespace for example:
 	 * fullName = "David Luis";
 	 */
 	private String fullName;
-
+	fullName="Vikhyath";
 	/**
 	 * student date of birth in "yyyy-MM-dd" format
 	 */
+	 
 	private Date birthDate;
-
+	birthDate="1996-08-01";
 	/**
 	 * student average mark
 	 */
 	private double avgMark;
+	avgMark=78.9;
 
 	public Student(int id, String fullName, Date birthDate, double avgMark) {
 		this.id = id;
