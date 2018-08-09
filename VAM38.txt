@@ -30,11 +30,16 @@ Q4)
 1.Take a string as input and store it in the array s[]
 2.Declare two integer variables count and i
 3.Intialize count=0
-4.for (i = 0;s[i] != '\0';i++)//Using for loop search for a space ‘ ‘ in the string and consecutively increment a variable count.
+4.for (i = 0;s[i] != '\0';i++)//Using for loop search for a space â€˜ â€˜ in the string and consecutively increment a variable count.
         if (s[i] == ' ')
             count++;
 5.Increment the variable count by 1 and then print the variable count as output.
 
 
 Q5)   
+    Scanner scan = new Scanner(System.in);
+System.out.println("Type a sentence and press enter.");
+String input = scan.nextLine();
+String strippedInput = input.replaceAll("\\W", "");
+System.out.println("Your string: " + strippedInput);   
     
