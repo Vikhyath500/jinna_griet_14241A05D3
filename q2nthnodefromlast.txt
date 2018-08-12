@@ -1,0 +1,19 @@
+Q2) nth node from last in linked list
+
+1.Declare a structure node
+   a.Declare int variable data  
+   b.Declare structure variable struct node *next
+2.struct node NODE
+3.NODE *head,*ptr1=head,*ptr2=head
+4.Declare int variable n
+5.while(n>0)
+{
+ptr1->next=node->next
+n--
+}
+6.while(node->next!=NULL && ptr1->next!=NULL)
+{
+ptr1->next=node->next
+ptr2->next=node->next
+}
+7.return ptr2.data

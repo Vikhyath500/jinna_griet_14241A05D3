@@ -1,0 +1,34 @@
+Q5)Floyd's Cycle
+
+1.Create a Data Structure to store a linked list node
+struct Node
+{
+   int data;
+   Node* next;
+};
+
+2.Create a new linked list node from heap
+Node* newNode = new Node;
+
+newNode->data = data;
+newNode->next = headRef;
+headRef = newNode;
+
+3.Take two pointers - slow and fast
+Node *slow = head, *fast = head;
+while (fast && fast->next)
+{
+       a.move slow by one pointer
+       slow = slow->next;
+       b.move fast by two pointers
+       fast = fast->next->next;
+       c.if they meet any any node,linked list contains a cycle
+       d.if (slow == fast):
+	    return true;
+}
+
+4.We reach here if slow & fast pointer do not meet
+       return false;
+
+
+

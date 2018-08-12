@@ -1,0 +1,10 @@
+Q1)Find the difference between sum of first maximum m elements and sum of first minimum m elements from the given n elements
+
+1.Declare an integer of size n=5 as int arr[]={5,8,11,40,15}
+2.Declare int variables m=4,max=0,min=0
+3.Sort the array in increasing order
+4.for(int i=0,j=n-1;i<m;i++,j--){
+        min=min+arr[i];
+        max=max+arr[j];
+    }
+5.return (max - min);

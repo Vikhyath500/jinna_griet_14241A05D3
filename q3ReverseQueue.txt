@@ -1,0 +1,12 @@
+Q3)Reverse a Queue
+
+1.Create a queue and push elements into the queue
+2.Revere the queue using stack<int> Stack
+3.while(!Queue.empty()){
+        Stack.push(Queue.front());//push front of queue into the stack and pop
+        Queue.pop();
+   	 }
+    while(!Stack.empty()){
+        Queue.push(Stack.top());//push top of stack into the queue and pop
+        Stack.pop();
+    	}

@@ -1,0 +1,22 @@
+Q4)Find if pairs of numbers in an integer array are consecutive or not
+
+1.Declare a stack and push elements into the stack
+2.Transfer elements of s to aux stack<int> aux
+3.while(!s.empty()){
+        aux.push(s.top())
+        s.pop()
+        }
+4.Traverse aux and see if elements are pairwise consecutive or not
+5.while(aux.empty()>1){
+       int x = aux.top()
+       aux.pop()
+       int y = aux.top()
+       aux.pop()
+       if(abs(x - y)!= 1)
+       result = false
+ 	s.push(x)
+        s.push(y)
+    }
+6.if(aux.size() == 1)
+    s.push(aux.top())
+    return result

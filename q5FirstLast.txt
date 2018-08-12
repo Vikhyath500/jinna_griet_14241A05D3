@@ -1,0 +1,7 @@
+Q5)Given 1 2 3 4 5 6 7 8 9 10 then print 1 10 2 9 3 8 4 7 5 6
+
+1.The input array is given and number of inputs is declared as n
+2.calculate middle=n/2
+3.The elements from 0 to middle are enqueued into the queue, and middle+1 to n elements are pushed onto the stack
+4.Until front=middle start dequeuing from queue and the top element from stack is popped and enqueued into queue
+5.Until both stack and queue are empty repeat the above step

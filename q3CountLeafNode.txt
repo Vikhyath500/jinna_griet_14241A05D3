@@ -1,0 +1,26 @@
+Q4)Count number of leaf nodes in a tree
+
+1.unsigned int count=0;
+2.if(tree->root!=NULL)
+  {
+
+        count=binarytree_count_recursive(tree->root);
+   }
+3.unsigned int binarytree_count_recursive(const btnode *root)
+{
+a.We only return 1 if we are a leaf node.Otherwise, we recurse into the left and right subtrees and return the sum of the leaves in them.
+    unsigned int count =0;
+     if(root->left==NULL&&root->right==NULL){	
+        count = 1;
+       }
+	else
+	{
+    	if(root->left!=NULL){
+       count+=binarytree_count_recursive(root->left);
+    	}
+    	if(root->right!=NULL) {
+        count+=binarytree_count_recursive(root->right);
+   	 }
+	}
+    	return count;	
+}

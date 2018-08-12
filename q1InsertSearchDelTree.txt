@@ -1,0 +1,25 @@
+Q1)Insert,Search and Delete in a tree
+
+Insert:
+1.An unordered tree is taken
+2.Two nodes s1,s2 are taken as input which have to be inserted in tree
+3.pre-order traversal is done on the tree,i.e Root Left Right
+4.s1 is compared with each node while traversing
+5.After finding s1 node, node is inserted according to position either left or right
+6.The node is added to the tree
+
+Search:
+1.An unordered tree is taken
+2.A node s is taken as input which has to be searched in tree
+3.pre-order traversal is done on the tree,i.e Root Left Right
+4.s is compared with each node while traversing
+5.If node matches return node found
+6.Else return node not found
+
+Delete:
+1.An unordered tree is taken
+2.A node s is taken as input which has to be deleted in tree
+3.pre-order traversal is done on the tree,i.e Root Left Right
+4.s is compared with each node while traversing
+5.If node matches then swap it with its immediate left node
+

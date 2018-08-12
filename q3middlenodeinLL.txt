@@ -1,0 +1,12 @@
+Q3)Middle node in linked list
+
+1.Declare structure node
+  a.Declare an integer variable data
+  b.Declare structure pointer struct node *next
+2.Declare structure variables head,*ptr1=head,*ptr2=head//Assigning both the pointers to head
+3.while(node->next!=NULL && ptr2->next!=NULL)
+{
+ptr1->next=node->next
+ptr2->next=node->next->next
+}
+4.return ptr1.data

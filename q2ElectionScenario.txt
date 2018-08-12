@@ -1,0 +1,19 @@
+Q2)Election Scenario, Count number of votes each candidate got and find the winner.
+
+1.Declare an integer array which has the vote list as s
+2.Declare int variables i,c1,c2,c3,c4
+3.for i=1 until i<n and increment i++
+	switch(s)
+	{
+	case A:if c1 has a vote then increment
+	break;
+	case B:if c2 has a vote then increment
+	break;
+	case C:if c3 has a vote then increment
+	break;
+	case D:if c4 has a vote then increment
+	break;
+	default:if no votes then exit()
+	}
+4.The candidate who has the highest count of votes is declarer winner
+

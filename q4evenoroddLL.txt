@@ -1,0 +1,19 @@
+Q4)Even or odd in Linked list
+
+1.Declare structure node
+  a.Declare int variable data
+  b.Declare structure pointer struct node *next
+2.Declare structure variable struct node NODE
+3.NODE head,*ptr=head
+4.Declare int variable n=0
+5.while(ptr->next!=NULL)
+{
+n++
+ptr=ptr->next
+}
+6.if(n%2==0)
+{
+list is even
+}
+7.else
+list is odd

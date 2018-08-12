@@ -1,0 +1,22 @@
+Q4)Find if the given tree is a full binary tree
+
+1.Enter nodes into the tree
+2.This function tests if a binary tree is a full binary tree.
+bool isFullTree(struct Node* root)
+{
+    a.If empty tree
+    if(root==NULL)
+        return true;
+ 
+    b.If leaf node
+    if(root->left==NULL&&root->right==NULL)
+        return true;
+ 
+    c.If both left and right are not NULL, and left & right subtrees are full
+    if((root->left)&&(root->right))
+        return(isFullTree(root->left)&&isFullTree(root->right));
+ 
+    d.We reach here when none of the above if conditions work
+    return false;
+}
+ 
