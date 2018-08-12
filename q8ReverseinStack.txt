@@ -1,0 +1,7 @@
+Q8)Reverse of Stack
+
+1.Make new stack
+2.while(old stack not empty):
+    a.x=pop(old stack)
+    b.push x on new stack
+

@@ -1,0 +1,33 @@
+Q8)Heap Sort
+
+1.Take an array as input  and declare n as the size of the array
+2.Build heap (rearrange array)
+3.for(int i=n/2-1;i>=0;i--)
+   {
+
+a.	 int largest=i;  	//Initialize largest as root
+    	 int l=2*i+1;  		//left=2*i+1
+         int r=2*i+2;  		//right=2*i+2
+ 
+b.    if(l<n&&arr[l]>arr[largest])  //If left child is larger than root
+        largest=l;
+ 
+c.   if(r<n&&arr[r]>arr[largest])   //If right child is larger than largest so far
+        largest=r;
+    
+d.    if(largest!=i)		    //If largest is not root
+    {
+        swap(arr[i],arr[largest]);
+ 
+e. Recursively heapify the affected sub-tree
+       
+    }
+}
+
+4.One by one extract an element from heap
+    for(int i=n-1;i>=0;i--)
+    {
+        a.Move current root to end
+        swap(arr[0],arr[i]);
+        b.call max heapify on the reduced heap
+    }
