@@ -1,0 +1,8 @@
+Q6)For a list of n integers reverse only the first k elements
+
+The idea is to use an auxiliary stack.
+
+1.Create an empty stack.
+2.One by one dequeue items from given queue and push the dequeued items to stack.
+3.Enqueue the contents of stack at the back of the queue
+4.Reverse the whole queue.

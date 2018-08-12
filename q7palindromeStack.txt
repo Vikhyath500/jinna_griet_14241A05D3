@@ -1,0 +1,12 @@
+Q7)Palindrome or not in Stack
+
+1.mid=n/2
+2.for i=0 until i<mid and increment i++:
+	a.if(i!=mid):
+	   pop(i);
+	   push(i);
+	b.else
+	   pop(i);
+3.Check for comparison by if(strcmp(a,b)==true):
+  return palindrome
+4.else return not a palindrome

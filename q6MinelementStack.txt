@@ -1,0 +1,7 @@
+Q6)Minimum element in stack
+
+1.min=a[n]
+2.for loop until i=n-1 to 0 and increment i++:
+	if(a[i]<min)
+	min=a[i]
+3.return min
