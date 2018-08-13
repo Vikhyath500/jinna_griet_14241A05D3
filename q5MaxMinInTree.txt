@@ -1,0 +1,38 @@
+Q5)Maximum and minimum number in a tree
+
+1.Create a tree and enter nodes in the tree
+2.Create a function which returns maximum and minimum value in a given Binary Tree
+3.int findMin(struct Node* root)
+  {
+    a.Base case
+    if(root==NULL)
+      return INT_MIN;
+ 
+    b.Return maximum of 3 values:
+    1)Root's data 2)Max in Left Subtree 3)Max in right subtree
+    int res=root->data;
+    int lres=findMax(root->left);
+    int rres=findMax(root->right);
+    if(lres>res)
+      res=lres;
+    if(rres>res)
+      res=rres;
+    return res;
+  }
+4.int findMax(struct Node* root)
+  {
+    a.Base case
+    if(root==NULL)
+      return INT_MAX;
+ 
+    b.Return maximum of 3 values:
+    1)Root's data 2)Max in Left Subtree 3)Max in right subtree
+    int res=root->data;
+    int lres=findMax(root->left);
+    int rres=findMax(root->right);
+    if(lres<res)
+      res=lres;
+    if(rres<res)
+      res=rres;
+    return res;
+  }

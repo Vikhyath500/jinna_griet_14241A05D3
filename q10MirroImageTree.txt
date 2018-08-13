@@ -1,0 +1,24 @@
+Q10)Mirror image of a tree
+
+1.Create a tree and add nodes to it
+2.Create a new node
+node *getNewNode(int value)
+  {
+   node *new_node=new node;
+   new_node->value=value;
+   new_node->left=NULL;
+   new_node->right=NULL;
+   return new_node;
+  }
+4.Create a mirror tree
+5. node* mirror(node* root)
+  {
+   node* m_root=NULL;
+   if(!root) 
+    return NULL;
+   m_root=getNewNode(root->value);
+   m_root->left=mirror(root->right);
+   m_root->right=mirror(root->left);
+   return m_root;
+  }
+  

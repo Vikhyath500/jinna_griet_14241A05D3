@@ -1,0 +1,6 @@
+Q6)Delete Tree
+
+1.Take an unordered tree
+2.BFS is performed on the tree and level wise values are enqueued into the queue
+3.The queue is dequeued until the root value of the tree is NULL
+

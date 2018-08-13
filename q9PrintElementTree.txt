@@ -1,0 +1,6 @@
+Q9)Print all the elements in the tree
+
+1.Take an unordered tree
+2.BFS traversal is performed and nodes of each level is enqueued into the queue
+3.Print the queue
+
